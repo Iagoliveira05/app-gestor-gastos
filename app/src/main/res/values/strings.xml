@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">gestor-gastos</string>
+    <string name="link_planilha">Link Planilha</string>
+    <string name="hint_insira_o_link">Insira o link…</string>
+    <string name="nome">Nome</string>
+    <string name="text_nome_local">Nome / Local</string>
+    <string name="text_preco">Preço</string>
+    <string name="hint_exemplo_preco">Ex.: R$ 30,14</string>
+    <string name="hint_exemplo_local">Ex.: Mercado</string>
+    <string name="text_atualizar_dados">Atualizar Dados</string>
 </resources>
