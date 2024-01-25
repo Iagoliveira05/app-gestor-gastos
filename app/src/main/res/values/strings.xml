@@ -8,4 +8,5 @@
     <string name="hint_exemplo_preco">Ex.: R$ 30,14</string>
     <string name="hint_exemplo_local">Ex.: Mercado</string>
     <string name="text_atualizar_dados">Atualizar Dados</string>
+    <string name="planilha_de_gastos">Planilha de Gastos</string>
 </resources>

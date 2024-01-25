@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+ <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,23 +26,9 @@
                 android:layout_marginBottom="15dp"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:text="@string/link_planilha"
-                android:textColor="@color/text_title"
-                android:textSize="35sp" />
-
-            <EditText
-                android:id="@+id/edit_link_planilha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="35dp"
-                android:background="@drawable/background_edit"
-                android:hint="@string/hint_insira_o_link"
-                android:inputType="textImeMultiLine"
-                android:paddingHorizontal="20dp"
-                android:singleLine="false"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray"
-                android:textSize="24sp" />
+                android:text="@string/planilha_de_gastos"
+                android:textColor="@color/yellow"
+                android:textSize="40sp" />
 
             <TextView
                 android:layout_width="match_parent"
