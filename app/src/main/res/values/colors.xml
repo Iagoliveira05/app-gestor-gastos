@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="transparent">#00FFFFFF</color>
     <color name="yellow">#fbbc04</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
@@ -7,7 +8,7 @@
     <color name="background">#373737</color>
     <color name="background_edit">#F1F1F1</color>
     <color name="border_edit">#3465B8</color>
-    <color name="text_title">#bde0fe</color>
+    <color name="text_title">#ADB5BC</color>
     <color name="green">#34a853</color>
 
 </resources>
