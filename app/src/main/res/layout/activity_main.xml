@@ -1,13 +1,24 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/planilha_de_gastos"
+        android:textColor="@color/yellow"
+        android:textSize="40sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,66 +31,72 @@
             android:orientation="vertical"
             android:paddingTop="40dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="@string/planilha_de_gastos"
-                android:textColor="@color/yellow"
-                android:textSize="40sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="@string/text_nome_local"
-                android:textColor="@color/text_title"
-                android:textSize="35sp" />
 
-            <EditText
-                android:id="@+id/edit_nome"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="35dp"
-                android:background="@drawable/background_edit"
-                android:hint="@string/hint_exemplo_local"
-                android:inputType="textImeMultiLine"
-                android:paddingHorizontal="20dp"
-                android:singleLine="false"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray"
-                android:textSize="24sp" />
+                android:background="@drawable/background_group"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="@string/text_preco"
-                android:textColor="@color/text_title"
-                android:textSize="35sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/text_nome_local"
+                    android:textColor="@color/text_title"
+                    android:textSize="35sp" />
 
-            <EditText
-                android:id="@+id/edit_preco"
+                <EditText
+                    android:id="@+id/edit_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:background="@drawable/background_edit"
+                    android:hint="@string/hint_exemplo_local"
+                    android:inputType="textImeMultiLine"
+                    android:paddingHorizontal="20dp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="35dp"
-                android:background="@drawable/background_edit"
-                android:hint="@string/hint_exemplo_preco"
-                android:inputType="numberDecimal"
-                android:paddingHorizontal="20dp"
-                android:singleLine="false"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray"
-                android:textSize="24sp"
-                />
+                android:background="@drawable/background_group"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/text_preco"
+                    android:textColor="@color/text_title"
+                    android:textSize="35sp" />
+
+                <EditText
+                    android:id="@+id/edit_preco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:background="@drawable/background_edit"
+                    android:hint="@string/hint_exemplo_preco"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="20dp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_atualizar_dados"
@@ -91,14 +108,12 @@
                 android:minHeight="50sp"
                 android:text="@string/text_atualizar_dados"
                 android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
         </LinearLayout>
 
 
-
     </ScrollView>
-
 
 
 </LinearLayout>

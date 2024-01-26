@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">gestor-gastos</string>
+    <string name="app_name">Gastos</string>
     <string name="link_planilha">Link Planilha</string>
     <string name="hint_insira_o_link">Insira o link…</string>
     <string name="nome">Nome</string>

@@ -31,8 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun enviarDados(nome: String, valor: Double) {
-        Toast.makeText(applicationContext, "Dados Atualizados", Toast.LENGTH_SHORT).show()
-        val url="https://script.google.com/macros/s/AKfycbxpN6elfynLzbAxg-53Jx8PyJvJz0CXow8xabMEmN2m1MRCujEH0JO3YRHI5b_njsoPRg/exec"
+        val url="https://script.google.com/macros/s/AKfycbzIQOXfYoBvVQRgoO5Ds9ZN4X38RPTSTZ6V71ZovcCeSC9v0zm4eJsKZM5hybKpFMJBcg/exec"
         val stringRequest = object : StringRequest(Request.Method.POST, url,
             Response.Listener {
                 Toast.makeText(applicationContext, it.toString(), Toast.LENGTH_SHORT).show()
@@ -42,8 +41,8 @@ class MainActivity : AppCompatActivity() {
             }){
             override fun getParams(): MutableMap<String, String>? {
                 val params = HashMap<String, String>()
-                params["Nome"] = nome
-                params["Valor"] = valor.toString()
+                params["nome"] = nome
+                params["valor"] = valor.toString()
 
                 return params
             }
