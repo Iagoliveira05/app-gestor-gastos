@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
             if (editLocal.isNotEmpty() && editPreco.isNotEmpty()) {
                 enviarDados(editLocal, editPreco.toDouble())
+                binding.editNome.setText("")
+                binding.editPreco.setText("")
             } else {
                 Toast.makeText(applicationContext, "Preencha os campos", Toast.LENGTH_SHORT).show()
             }
